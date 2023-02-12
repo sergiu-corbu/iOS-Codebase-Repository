@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		EC6B8EB129992989004EA731 /* Advanced_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EB029992989004EA731 /* Advanced_SwiftUIApp.swift */; };
-		EC6B8EB329992989004EA731 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EB229992989004EA731 /* ContentView.swift */; };
 		EC6B8EB52999298A004EA731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6B8EB42999298A004EA731 /* Assets.xcassets */; };
 		EC6B8EB82999298A004EA731 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6B8EB72999298A004EA731 /* Preview Assets.xcassets */; };
+		EC6B8EC029992F25004EA731 /* SwiftUI+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EBF29992F25004EA731 /* SwiftUI+Animations.swift */; };
+		EC6B8EC429992F5F004EA731 /* SwiftUI+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EC329992F5F004EA731 /* SwiftUI+Transitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC6B8EAD29992989004EA731 /* Advanced-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Advanced-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6B8EB029992989004EA731 /* Advanced_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_SwiftUIApp.swift; sourceTree = "<group>"; };
-		EC6B8EB229992989004EA731 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC6B8EB42999298A004EA731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6B8EB72999298A004EA731 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC6B8EBF29992F25004EA731 /* SwiftUI+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Animations.swift"; sourceTree = "<group>"; };
+		EC6B8EC329992F5F004EA731 /* SwiftUI+Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Transitions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6B8EB029992989004EA731 /* Advanced_SwiftUIApp.swift */,
-				EC6B8EB229992989004EA731 /* ContentView.swift */,
+				EC6B8EC129992F44004EA731 /* Core */,
 				EC6B8EB42999298A004EA731 /* Assets.xcassets */,
 				EC6B8EB62999298A004EA731 /* Preview Content */,
 			);
@@ -65,6 +67,39 @@
 				EC6B8EB72999298A004EA731 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC6B8EC129992F44004EA731 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8EC629992F75004EA731 /* SwiftUI */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EC6B8EC229992F54004EA731 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8EBF29992F25004EA731 /* SwiftUI+Animations.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		EC6B8EC529992F66004EA731 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8EC329992F5F004EA731 /* SwiftUI+Transitions.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		EC6B8EC629992F75004EA731 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8EC529992F66004EA731 /* Transitions */,
+				EC6B8EC229992F54004EA731 /* Animations */,
+			);
+			path = SwiftUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6B8EB329992989004EA731 /* ContentView.swift in Sources */,
+				EC6B8EC029992F25004EA731 /* SwiftUI+Animations.swift in Sources */,
 				EC6B8EB129992989004EA731 /* Advanced_SwiftUIApp.swift in Sources */,
+				EC6B8EC429992F5F004EA731 /* SwiftUI+Transitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
