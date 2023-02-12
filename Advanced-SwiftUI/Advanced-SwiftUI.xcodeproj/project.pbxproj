@@ -12,6 +12,15 @@
 		EC6B8EB82999298A004EA731 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6B8EB72999298A004EA731 /* Preview Assets.xcassets */; };
 		EC6B8EC029992F25004EA731 /* SwiftUI+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EBF29992F25004EA731 /* SwiftUI+Animations.swift */; };
 		EC6B8EC429992F5F004EA731 /* SwiftUI+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EC329992F5F004EA731 /* SwiftUI+Transitions.swift */; };
+		EC6B8EC8299931B9004EA731 /* VerticalTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EC7299931B9004EA731 /* VerticalTabView.swift */; };
+		EC6B8ECB299931FF004EA731 /* UIHostingViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8ECA299931FF004EA731 /* UIHostingViewCell.swift */; };
+		EC6B8ECE2999321B004EA731 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8ECD2999321B004EA731 /* CollectionView.swift */; };
+		EC6B8ED029993248004EA731 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8ECF29993248004EA731 /* UIView+Extensions.swift */; };
+		EC6B8ED729993323004EA731 /* ToastDisplay+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8ED329993323004EA731 /* ToastDisplay+Style.swift */; };
+		EC6B8ED929993324004EA731 /* ToastDisplay+ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8ED529993323004EA731 /* ToastDisplay+ViewExtensions.swift */; };
+		EC6B8EDA29993324004EA731 /* ToastDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8ED629993323004EA731 /* ToastDisplay.swift */; };
+		EC6B8EDC299933D2004EA731 /* Concurrency+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EDB299933D2004EA731 /* Concurrency+Utils.swift */; };
+		EC6B8EDF29993424004EA731 /* SwiftUI+TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6B8EDE29993424004EA731 /* SwiftUI+TextStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +30,15 @@
 		EC6B8EB72999298A004EA731 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EC6B8EBF29992F25004EA731 /* SwiftUI+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Animations.swift"; sourceTree = "<group>"; };
 		EC6B8EC329992F5F004EA731 /* SwiftUI+Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+Transitions.swift"; sourceTree = "<group>"; };
+		EC6B8EC7299931B9004EA731 /* VerticalTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTabView.swift; sourceTree = "<group>"; };
+		EC6B8ECA299931FF004EA731 /* UIHostingViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHostingViewCell.swift; sourceTree = "<group>"; };
+		EC6B8ECD2999321B004EA731 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		EC6B8ECF29993248004EA731 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		EC6B8ED329993323004EA731 /* ToastDisplay+Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToastDisplay+Style.swift"; sourceTree = "<group>"; };
+		EC6B8ED529993323004EA731 /* ToastDisplay+ViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToastDisplay+ViewExtensions.swift"; sourceTree = "<group>"; };
+		EC6B8ED629993323004EA731 /* ToastDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastDisplay.swift; sourceTree = "<group>"; };
+		EC6B8EDB299933D2004EA731 /* Concurrency+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Concurrency+Utils.swift"; sourceTree = "<group>"; };
+		EC6B8EDE29993424004EA731 /* SwiftUI+TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI+TextStyle.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				EC6B8EC629992F75004EA731 /* SwiftUI */,
+				EC6B8ED1299932C6004EA731 /* UIKit */,
+				EC6B8EC9299931C1004EA731 /* SwiftUI+UIKit */,
+				EC6B8EDD299933D7004EA731 /* Concurrency */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -96,10 +117,64 @@
 		EC6B8EC629992F75004EA731 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EC6B8ED229993323004EA731 /* ToastDisplay */,
 				EC6B8EC529992F66004EA731 /* Transitions */,
 				EC6B8EC229992F54004EA731 /* Animations */,
+				EC6B8EE029993428004EA731 /* TextStyle */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		EC6B8EC9299931C1004EA731 /* SwiftUI+UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8EC7299931B9004EA731 /* VerticalTabView.swift */,
+				EC6B8ECC29993209004EA731 /* CollectionView */,
+			);
+			path = "SwiftUI+UIKit";
+			sourceTree = "<group>";
+		};
+		EC6B8ECC29993209004EA731 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8ECD2999321B004EA731 /* CollectionView.swift */,
+				EC6B8ECA299931FF004EA731 /* UIHostingViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		EC6B8ED1299932C6004EA731 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8ECF29993248004EA731 /* UIView+Extensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EC6B8ED229993323004EA731 /* ToastDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8ED629993323004EA731 /* ToastDisplay.swift */,
+				EC6B8ED329993323004EA731 /* ToastDisplay+Style.swift */,
+				EC6B8ED529993323004EA731 /* ToastDisplay+ViewExtensions.swift */,
+			);
+			path = ToastDisplay;
+			sourceTree = "<group>";
+		};
+		EC6B8EDD299933D7004EA731 /* Concurrency */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8EDB299933D2004EA731 /* Concurrency+Utils.swift */,
+			);
+			path = Concurrency;
+			sourceTree = "<group>";
+		};
+		EC6B8EE029993428004EA731 /* TextStyle */ = {
+			isa = PBXGroup;
+			children = (
+				EC6B8EDE29993424004EA731 /* SwiftUI+TextStyle.swift */,
+			);
+			path = TextStyle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +247,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6B8ED729993323004EA731 /* ToastDisplay+Style.swift in Sources */,
+				EC6B8ED029993248004EA731 /* UIView+Extensions.swift in Sources */,
+				EC6B8EDF29993424004EA731 /* SwiftUI+TextStyle.swift in Sources */,
+				EC6B8ED929993324004EA731 /* ToastDisplay+ViewExtensions.swift in Sources */,
+				EC6B8EDA29993324004EA731 /* ToastDisplay.swift in Sources */,
+				EC6B8ECE2999321B004EA731 /* CollectionView.swift in Sources */,
+				EC6B8EC8299931B9004EA731 /* VerticalTabView.swift in Sources */,
+				EC6B8ECB299931FF004EA731 /* UIHostingViewCell.swift in Sources */,
 				EC6B8EC029992F25004EA731 /* SwiftUI+Animations.swift in Sources */,
 				EC6B8EB129992989004EA731 /* Advanced_SwiftUIApp.swift in Sources */,
+				EC6B8EDC299933D2004EA731 /* Concurrency+Utils.swift in Sources */,
 				EC6B8EC429992F5F004EA731 /* SwiftUI+Transitions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
