@@ -8,14 +8,14 @@
 import UIKit
 
 extension UIView {
-    
-    func constrainAllMargins(with other: UIView) {
-        let constraints = [
-            topAnchor.constraint(equalTo: other.topAnchor),
-            bottomAnchor.constraint(equalTo: other.bottomAnchor),
-            leadingAnchor.constraint(equalTo: other.leadingAnchor),
-            trailingAnchor.constraint(equalTo: other.trailingAnchor)
-        ]
-        NSLayoutConstraint.activate(constraints)
-    }
+  
+  func constrainAllMargins(with other: UIView) {
+    let constraints = [
+      topAnchor.constraint(equalTo: other.topAnchor),
+      bottomAnchor.constraint(equalTo: other.bottomAnchor),
+      leadingAnchor.constraint(equalTo: other.leadingAnchor),
+      trailingAnchor.constraint(equalTo: other.trailingAnchor)
+    ]
+    NSLayoutConstraint.activate(constraints)
+  }
 }

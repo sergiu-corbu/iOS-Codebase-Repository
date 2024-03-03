@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct Advanced_SwiftUIApp: App {
-    var body: some Scene {
-        WindowGroup {
-            EmptyView()
-        }
+  var body: some Scene {
+    WindowGroup {
+      EmptyView()
     }
+  }
 }

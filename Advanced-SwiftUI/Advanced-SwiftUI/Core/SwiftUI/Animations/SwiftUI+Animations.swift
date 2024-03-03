@@ -8,5 +8,5 @@
 import SwiftUI
 
 extension Animation {
-    static let hero = Self.interactiveSpring(response: 0.6, dampingFraction: 0.8, blendDuration: 0.6)
+  static let hero = Self.interactiveSpring(response: 0.6, dampingFraction: 0.8, blendDuration: 0.6)
 }

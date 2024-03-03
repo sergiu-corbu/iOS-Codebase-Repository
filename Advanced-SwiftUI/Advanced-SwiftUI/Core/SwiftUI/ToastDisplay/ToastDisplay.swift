@@ -118,7 +118,7 @@ struct ToastDisplay_Previews: PreviewProvider {
                     isPresented.toggle()
                 }
                 .successToast(isPresented: $isPresented, title: "Success", message: ToastError.message.localizedDescription + ToastError.message.localizedDescription)
-//                .errorToast(isPresented: $isPresented, error: ToastError.message)
+            //                .errorToast(isPresented: $isPresented, error: ToastError.message)
         }
     }
 }
